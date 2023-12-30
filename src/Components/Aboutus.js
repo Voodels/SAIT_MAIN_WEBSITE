@@ -1,7 +1,7 @@
 
 import React, { forwardRef } from "react";
 import SvgImage from "../Assets/sait.jpg";
-
+import "../Style/About.css";
 const AboutComponent = forwardRef((props, ref) => {
   return (
     <section
@@ -14,8 +14,27 @@ const AboutComponent = forwardRef((props, ref) => {
       <div className="container mx-auto relative z-10 text-center">
         <div className="md:w-2/3 mx-auto">
           {/* Text */}
-          <div className="text-5xl font-bold gradient-text mb-8">
-            Welcome to SAIT
+          <div className="text-5xl font-bold gradient-text mb-8
+            content
+
+             flex justify-center align-center
+
+             text-center
+          ">
+            <h2
+              className="txt
+               text-center
+              "
+            >
+              Welcome to SAIT
+            </h2>
+            <h2
+              className="txt
+                text-center
+              "
+            >
+              Welcome to SAIT
+            </h2>
           </div>
           <p className="lg:text-lg leading-relaxed mb-8 aboutfont">
             Students’ Association of Information Technology (SAIT), established
@@ -36,3 +55,9 @@ const AboutComponent = forwardRef((props, ref) => {
 });
 
 export default AboutComponent;
+
+
+
+
+
+

@@ -9,32 +9,51 @@ const OurTeam = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="flex flex-col justify-between items-center mt-12">
-      <h2 className="text-[50px]  font-bold  text-center gradient-text event_section_heading  mt-5">
-        Our Team
-      </h2>
+
+      <div className="text-5xl font-bold  mb-8
+            content
+
+             flex justify-center align-center
+                top-3 p-3
+
+             text-center
+          ">
+        <h2
+          className="txt
+               text-center
+              "
+        >
+          Our Team
+        </h2>
+        <h2
+          className="txt
+                text-center
+              "
+        >
+          Our Team
+        </h2>
+      </div>
+
 
       <div className=" text-white text-center  mt-4  mb-4  ">
         <button
-          className={`w-fit mx-auto rounded-md px-4 py-3 mb-2 ${
-            ourTeam === 1 ? "bg-blue-500" : "bg-black"
-          } hover:bg-blue-600 transition duration-300 ease-in-out`}
+          className={`w-fit mx-auto rounded-md px-4 py-3 mb-2 ${ourTeam === 1 ? "bg-blue-500" : "bg-black"
+            } hover:bg-blue-600 transition duration-300 ease-in-out`}
           onClick={() => setourTeam(1)}
         >
           Main Board
         </button>
         <div className="flex gap-2 justify-center">
           <button
-            className={`rounded-md px-4 py-2 ${
-              ourTeam === 0 ? "bg-blue-500" : "bg-black"
-            } hover:bg-blue-600 transition duration-300 ease-in-out`}
+            className={`rounded-md px-4 py-2 ${ourTeam === 0 ? "bg-blue-500" : "bg-black"
+              } hover:bg-blue-600 transition duration-300 ease-in-out`}
             onClick={() => setourTeam(0)}
           >
             Member Board
           </button>
           <button
-            className={`rounded-md px-4 py-2 ${
-              ourTeam === 2 ? "bg-blue-500" : "bg-black"
-            } hover:bg-blue-600 transition duration-300 ease-in-out`}
+            className={`rounded-md px-4 py-2 ${ourTeam === 2 ? "bg-blue-500" : "bg-black"
+              } hover:bg-blue-600 transition duration-300 ease-in-out`}
             onClick={() => setourTeam(2)}
           >
             Assistant Board

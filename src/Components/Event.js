@@ -1,20 +1,45 @@
 
 import "../Style/Event.css";
-import React,{forwardRef} from "react";
+import React, { forwardRef } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import events from "../Data/EventData";
 
 
-const Event = forwardRef((props, ref) =>  {
+const Event = forwardRef((props, ref) => {
   const navigate = useNavigate();
 
   return (
     <div ref={ref} className="p-4 event_section">
-     <div className="text-[50px] font-bold text-center gradient-text event_section_heading mt-5">
-  Events
-</div>
+      <div className="text-[50px] font-bold text-center gradient-text event_section_heading mt-5">
 
-     
+
+        <div className="text-5xl font-bold gradient-text mb-8
+            content
+
+             flex justify-center align-center
+               top-3 p-3
+
+          ">
+          <h2
+            className="txt
+               text-center
+              "
+          >
+            Events
+          </h2>
+          <h2
+            className="txt
+                text-center
+              "
+          >
+            Events
+          </h2>
+        </div>
+
+
+      </div>
+
+
 
       <div className="flex flex-wrap  justify-center mt-2 event_section_events">
         {events.map((event, i) => {
